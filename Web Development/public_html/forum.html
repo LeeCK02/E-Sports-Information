@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1>Forum</h1>
+    <div class="filter">
+                <!-- Filter Select Option -->
+                    <select id="filterOption">
+                      <option value="all">All</option>
+                      <option value=league">League of Legends</option>
+                      <option value="csgo">CS:GO</option>
+                      <option value="dota">Dota 2</option>
+                      <option value="valorant">Valorant</option>
+                    </select>
+
+                        <!-- List of Items -->
+                        <ul>
+                          <li class="item" data-filter="league">League</li>
+                          <li class="item" data-filter="csgo">CS:GO</li>
+                          <li class="item" data-filter="dota">Dota 2</li>
+                          <li class="item" data-filter="valorant">Valorantt</li>
+                        </ul>
+                </div>
+    <div>
+        <div>
+            <div><b>Post Title</b></div>
+            <div>This is the content of the post.</div>
+            <div>Posted by: Sample</div>
+            <div>Posted on: April 18, 2023</div>
+            <button type="submit">Reply</button>
+        </div>
+        <div>
+            <div><b>Another Post Title</b></div>
+            <div>This is another post content.</div>
+            <div>Posted by: Sample</div>
+            <div>Posted on: April 17, 2023</div>
+            <button type="submit">Reply</button>
+        </div>
+        <h2>Create a New Post</h2>
+        <form action="#" method="post">
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title" name="post-title" required>
+            <br>
+            <label for="post-content">Content</label>
+            <textarea id="post-content" name="post-content" rows="4" required></textarea>
+            <br>
+            <label for="post-author">Your Name</label>
+            <input type="text" id="post-author" name="post-author" required>
+            <br>
+            <input type="submit" value="Post">
+        </form>
+    </div>
+</body>
+</html>

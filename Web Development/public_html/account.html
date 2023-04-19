@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Account Information</h1>
+        <h2>User Details</h2>
+        <p><strong>Name:</strong> Sample</p>
+        <p><strong>Email:</strong> Sample@example.com</p>
+        <p><strong>Username:</strong> Sample</p>
+        <h2>Account Settings</h2>
+        
+        <form action="/update-account" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="Sample@example.com" required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+          <br>
+          <input type="submit" value="Update Account">
+        </form>
+    </body>
+
+</html>

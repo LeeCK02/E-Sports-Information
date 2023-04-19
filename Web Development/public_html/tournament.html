@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Tournaments</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Tournaments</h1>
+                <div class="filter">
+                <!-- Filter Select Option -->
+                    <select id="filterOption">
+                      <option value="all">All</option>
+                      <option value=league">League of Legends</option>
+                      <option value="csgo">CS:GO</option>
+                      <option value="dota">Dota 2</option>
+                      <option value="valorant">Valorant</option>
+                    </select>
+
+                        <!-- List of Items -->
+                        <ul>
+                          <li class="item" data-filter="league">League</li>
+                          <li class="item" data-filter="csgo">CS:GO</li>
+                          <li class="item" data-filter="dota">Dota 2</li>
+                          <li class="item" data-filter="valorant">Valorantt</li>
+                        </ul>
+                </div>
+            
+                <div class="content">
+                    <img src="sample" alt="Tournaments"/>
+                    <a>***Sample Tournament Details***</a>
+                    <a href="tournament_apply.html"><button type="button">Apply</button></a>
+                </div>
+        </div>
+    </body>
+</html>

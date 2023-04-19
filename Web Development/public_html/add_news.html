@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add News</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+  <h1>Add News</h1>
+  <form action="add_news.php" method="post" enctype="multipart/form-data">
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="image" accept="image/*" required><br>
+    <label for="news">News:</label><br>
+    <textarea id="news" name="news" rows="5" cols="30" required></textarea><br>
+    <label for="game">Game:</label>
+    <select id="game" name="game" required>
+      <option value="">-- Select a game --</option>
+      <option value="league_of_legends">League of Legends</option>
+      <option value="cs_go">CS:GO</option>
+      <option value="dota_2">Dota 2</option>
+      <option value="valorant">Valorant</option>
+    </select><br>
+    <input type="submit" value="Add News">
+  </form>
+</body>
+</html>
