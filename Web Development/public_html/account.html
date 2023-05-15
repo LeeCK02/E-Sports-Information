@@ -3,32 +3,132 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
+
+<style>
+    
+/* Set default styles for body, headings and paragraphs */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style user details section */
+.user_details {
+  margin-top: 20px;
+  margin-bottom: 60px !important;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.user_details p{
+    margin-bottom: 20px;
+}
+
+/* Style account settings section */
+.acc_settings {
+  margin-top: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.acc_settings label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.acc_settings input[type="email"],
+.acc_settings input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.acc_settings input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+    
+</style>
+
 <html>
     <head>
         <title>Account</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <h1>Account Information</h1>
-        <h2>User Details</h2>
-        <p><strong>Name:</strong> Sample</p>
-        <p><strong>Email:</strong> Sample@example.com</p>
-        <p><strong>Username:</strong> Sample</p>
-        <h2>Account Settings</h2>
         
-        <form action="/update-account" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" value="Sample@example.com" required>
-          <br>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-          <br>
-          <label for="confirm-password">Confirm Password:</label>
-          <input type="password" id="confirm-password" name="confirm-password" required>
-          <br>
-          <input type="submit" value="Update Account">
-        </form>
+         <!----------------- HEADER ------------------>
+        <div class="top_header">
+            <img src="img/E-sports_icon.png" alt="icon" style="height:40px; width:40px;"/>&nbsp;&nbsp;&nbsp;
+            <h3 style="color:#ff0066;">E-Sports Information</h3>
+             <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="forum.html">Forum</a>
+                <a href="tournament.html">Tournament</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="acc_navbar">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="account.html">View Account</a>
+            </div>
+        </div>
+        
+        <div class="game_navbar" style="margin-top:30px;">
+            <a href="league.html">League of Legends</a>
+            <a href="csgo.html">CS:GO</a>
+            <a href="dota.html">Dota 2</a>
+            <a href="valorant.html">Valorant</a>
+        </div>
+        
+        <!------------------ END OF HEADER ------------------>
+        
+        <h1 style=" font-size: 28px; font-weight: bold; margin-bottom: 20px; text-align:center;">Account Information</h1>
+        <div class="user_details">
+            <h2 style="font-size: 20px; font-weight: bold; margin-top: 10px; margin-bottom: 30px;">User Details</h2>
+            <p><strong>Name:</strong> Sample</p>
+            <p><strong>Email:</strong> Sample@example.com</p>
+            <p><strong>Username:</strong> Sample</p>
+         </div>
+        
+        <div class="acc_settings">
+            <h2 style="font-size: 20px; font-weight: bold; margin-top: 10px; margin-bottom: 10px;">Update Account Settings</h2>        
+            <form action="/update-account" method="post">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" value="Sample@example.com" required>
+              <br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <br>
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+              <br>
+              <input type="submit" value="Update Account">
+            </form>
+        </div>
     </body>
 
 </html>

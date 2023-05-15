@@ -1,0 +1,370 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : May 3, 2023, 2:33:43 PM
+    Author     : Admin
+*/
+
+.top_header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.top_header div {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.top_header a {
+  color: #000;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.top_header a:hover {
+  transform: scale(1.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the navbar */
+.navbar {
+  display: none;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Style for the navbar links */
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 40px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style for the active link */
+.navbar a.active {
+  color: red;
+}
+
+/* Style for the hover effect */
+.navbar a:hover {
+  transform: scale(1.1);
+  color:red;
+}
+
+.game_navbar {
+  background:#000;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+/* Style for the navbar links */
+.game_navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 40px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style for the active link */
+.game_navbar a.active {
+  color: #ffcc00;
+}
+
+/* Style for the hover effect */
+.game_navbar a:hover {
+  transform: scale(1.1);
+  color:aqua;
+}
+
+/* Latest News */
+.Latest {
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.Latest .row{
+    display:flex;
+    margin-bottom: 100px;
+}
+
+.Latest .row .column{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.Latest h1 {
+  font-size: 32px;
+  color:#ff0033;
+}
+
+.Latest img {
+  max-width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.Latest p {
+  font-size: 20px;
+}
+
+.content {
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.content .row{
+    display:flex;
+    margin-bottom: 100px;
+}
+
+.content .row .column{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.content h1 {
+  font-size: 32px;
+  color:#ff0033;
+}
+
+.content img {
+  max-width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.News {
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.News h1 {
+  font-size: 32px;
+}
+
+.News img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.News p {
+  font-size: 20px;
+}
+
+
+.login-box {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+.login-box h1 {
+    color: #111;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.login-box .input {
+    width: 350px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.login-box .input input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.login-box .btn {
+    display: block;
+    width: 390px;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #cc0099;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-box .btn:hover {
+    transform: translateY(-5px);
+    background: #660066;
+}
+
+.login-box .txt{
+    margin-top: 20px;
+    color: #111;
+    font-weight: 600;
+}
+
+.register-box {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+.register-box h1 {
+    color: #111;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.register-box .input {
+    width: 350px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.register-box .input input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.register-box .btn {
+    display: block;
+    width: 390px;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #cc0099;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register-box .btn:hover {
+    transform: translateY(-5px);
+    background: #660066;
+}
+
+.register-box .txt{
+    margin-top: 20px;
+    color: #111;
+    font-weight: 600;
+}
+
+
+.game_info ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game_info li{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+   
+.filter {
+    text-align:left;
+    margin-bottom: 50px;
+    padding-left: 500px;
+}
+
+.filter ul {
+    display: block;
+    list-style-type: disc;
+}
+
+.filter ul li {
+    list-style: none;
+    font-size: 18px;
+    color: #1c1c1c;
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter ul li:hover {
+    color: red;
+}
+
+.filter ul li.active {
+    color: red;
+}
+
+.tour_content{
+    border: 1px solid;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.tour_content button{
+    background-color: #666666; 
+    color:#fff; border:none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    margin-top: 15px;
+}
+
+.tour_content button:hover{
+    background-color: #000000; 
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .Latest .row {
+    display:inline; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

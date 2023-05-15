@@ -3,60 +3,214 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
+<style>
+
+/* Style the reply button */
+.review button[type="submit"] {
+  background-color: #008080;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.review button[type="submit"]:hover {
+  background-color: white;
+  color: #008080;
+  border: 1px solid #008080;
+}
+
+/* Style the create post section */
+.post-review h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.post-review form {
+  margin-top: 20px;
+}
+
+.post-review label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.post-review input[type="text"],
+.post-review textarea {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.post-review input[type="submit"] {
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.post-review input[type="submit"]:hover {
+  background-color: white;
+  color: #008080;
+  border: 1px solid #008080;
+}
+
+.review{
+    margin-bottom: 40px;
+    border: 1px solid;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.post-review{
+    margin-left: 20px;
+}
+
+
+</style>
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Forum</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-    <h1>Forum</h1>
-    <div class="filter">
-                <!-- Filter Select Option -->
-                    <select id="filterOption">
-                      <option value="all">All</option>
-                      <option value=league">League of Legends</option>
-                      <option value="csgo">CS:GO</option>
-                      <option value="dota">Dota 2</option>
-                      <option value="valorant">Valorant</option>
-                    </select>
-
-                        <!-- List of Items -->
+        
+                <!----------------- HEADER ------------------>
+        <div class="top_header">
+            <img src="img/E-sports_icon.png" alt="icon" style="height:40px; width:40px;"/>&nbsp;&nbsp;&nbsp;
+            <h3 style="color:#ff0066;">E-Sports Information</h3>
+             <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="forum.html">Forum</a>
+                <a href="tournament.html">Tournament</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="acc_navbar">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="account.html">View Account</a>
+            </div>
+        </div>
+        
+        <div class="game_navbar" style="margin-top:30px;">
+            <a href="league.html">League of Legends</a>
+            <a href="csgo.html">CS:GO</a>
+            <a href="dota.html">Dota 2</a>
+            <a href="valorant.html">Valorant</a>
+        </div>
+        
+        <!------------------ END OF HEADER ------------------>
+        
+    <h1 style="padding: 20px; margin: 0;">Forum</h1>
+        <div class="filter">
                         <ul>
-                          <li class="item" data-filter="league">League</li>
-                          <li class="item" data-filter="csgo">CS:GO</li>
-                          <li class="item" data-filter="dota">Dota 2</li>
-                          <li class="item" data-filter="valorant">Valorantt</li>
+                          <li class="active" data-filter="*">All</li>
+                          <li data-filter="league">League</li>
+                          <li data-filter="csgo">CS:GO</li>
+                          <li data-filter="dota">Dota 2</li>
+                          <li data-filter="valorant">Valorant</li>
                         </ul>
                 </div>
     <div>
-        <div>
+        <div class="review">
             <div><b>Post Title</b></div>
             <div>This is the content of the post.</div>
             <div>Posted by: Sample</div>
             <div>Posted on: April 18, 2023</div>
             <button type="submit">Reply</button>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>           
         </div>
-        <div>
-            <div><b>Another Post Title</b></div>
-            <div>This is another post content.</div>
+        
+        <div class="review">
+            <div><b>Post Title</b></div>
+            <div>This is the content of the post.</div>
             <div>Posted by: Sample</div>
-            <div>Posted on: April 17, 2023</div>
+            <div>Posted on: April 18, 2023</div>
             <button type="submit">Reply</button>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>           
         </div>
-        <h2>Create a New Post</h2>
-        <form action="#" method="post">
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title" required>
-            <br>
-            <label for="post-content">Content</label>
-            <textarea id="post-content" name="post-content" rows="4" required></textarea>
-            <br>
-            <label for="post-author">Your Name</label>
-            <input type="text" id="post-author" name="post-author" required>
-            <br>
-            <input type="submit" value="Post">
-        </form>
+        
+        <div class="review">
+            <div><b>Post Title</b></div>
+            <div>This is the content of the post.</div>
+            <div>Posted by: Sample</div>
+            <div>Posted on: April 18, 2023</div>
+            <button type="submit">Reply</button>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>           
+        </div>
+        `
+        <div class="review">
+            <div><b>Post Title</b></div>
+            <div>This is the content of the post.</div>
+            <div>Posted by: Sample</div>
+            <div>Posted on: April 18, 2023</div>
+            <button type="submit">Reply</button>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>
+            <hr style="margin-top: 20px;">
+            <div><b>Reply Title</b></div>
+            <div>This is the content of the reply.</div>
+            <div>Replied by: Sample</div>
+            <div>Replied on: April 18, 2023</div>           
+        </div>
+        
+        <div class="post-review">
+            <h2>Create a New Post</h2>
+            <form action="#" method="post">
+                <label for="post-title">Title</label>
+                <input type="text" id="post-title" name="post-title" required>
+                <br>
+                <label for="post-content">Content</label>
+                <textarea id="post-content" name="post-content" rows="4" required></textarea>
+                <br>
+                <input type="submit" value="Post">
+            </form>
+        </div>
     </div>
 </body>
 </html>

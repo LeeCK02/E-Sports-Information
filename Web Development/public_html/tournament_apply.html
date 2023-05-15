@@ -3,6 +3,80 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
+<style>
+    
+ /* Center the form container */
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the form title */
+h1 {
+  text-align: center;
+}
+
+/* Style the form inputs and labels */
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the error message */
+input:invalid {
+  border-color: red;
+}
+
+input:invalid:focus {
+  box-shadow: none;
+}
+    
+</style>
+
 <html>
     <head>
         <title>Tournament Application Form</title>
@@ -10,8 +84,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <h1>Tournament Application Form</h1>
         <div>
-            <h1>Tournament Application Form</h1>
             <!-- Form Element -->
             <form action="#" method="post">
               <!-- Name Input -->
@@ -30,6 +104,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <option value="dota2">Dota 2</option>
                 <option value="valorant">Valorant</option>
               </select>
+              
+              <!-- Tournament -->
+              <label for="tournament">Tournament:</label>
+              <input type="text" id="tournament" name="tournament" required>
 
               <!-- Team Name Input -->
               <label for="team_name">Team Name:</label>
