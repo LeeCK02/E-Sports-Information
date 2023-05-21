@@ -22,6 +22,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
   margin-left: auto;
 }
 
+.top_header img{
+    width: 80px !important;
+    height: 80px !important;
+}
+
 .top_header a {
   color: #000;
   margin-left: 15px;
