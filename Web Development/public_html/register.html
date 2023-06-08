@@ -25,12 +25,13 @@ body {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!-- Registration Form -->
         <div class="register-box">
             <h1>Register</h1>
-            <form>
+            <form name="register-form">
               <div class="input">
                 <input type="text" name="username" id="username" placeholder="Username" required><br>
               </div>
@@ -43,11 +44,12 @@ body {
               <div class="input">
                   <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required><br>
               </div>
-              <input type="submit" value="Register" class="btn">
+              <input type="submit" value="Register" class="btn" onclick="validation()">
             </form>
             <div class="txt">
                 <a>Already own an account? &nbsp;&nbsp;&nbsp; <a href="login.html">Login Here!</a>
             </div>
         </div>
-    </body>
+   
+    
 </html>
