@@ -285,7 +285,7 @@ if(isset($message)){
             <td><?php echo $row['description']; ?></td>
             <td><?php echo $row['type']; ?></td>
             <td>
-               <a href="update_news.php?edit=<?php echo $row['id']; ?>" class="edit-btn"> <i class="fas fa-edit"></i> edit </a>
+               <a href="update_tour.php?edit=<?php echo $row['id']; ?>" class="edit-btn"> <i class="fas fa-edit"></i> edit </a>
                <a href="add_tournaments.php?delete=<?php echo $row['id']; ?>" class="delete-btn"> <i class="fas fa-trash"></i> delete </a>
             </td>
          </tr>
